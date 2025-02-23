@@ -15,71 +15,71 @@ import {
 const data = [
   {
     name: "Jan",
-    Active: 4000,
-    Inactive: 2400,
+    income: 4000,
+    expense: 2400,
   },
   {
     name: "Feb",
-    Active: 3000,
-    Inactive: 1398,
+    income: 3000,
+    expense: 1398,
   },
   {
     name: "Mar",
-    Active: 2000,
-    Inactive: 9800,
+    income: 2000,
+    expense: 9800,
   },
   {
     name: "Apr",
-    Active: 2780,
-    Inactive: 3908,
+    income: 2780,
+    expense: 3908,
   },
   {
     name: "May",
-    Active: 1890,
-    Inactive: 4800,
+    income: 1890,
+    expense: 4800,
   },
   {
     name: "Jun",
-    Active: 2390,
-    Inactive: 3800,
+    income: 2390,
+    expense: 3800,
   },
   {
     name: "Jul",
-    Active: 3490,
-    Inactive: 4300,
+    income: 3490,
+    expense: 4300,
   },
   {
     name: "Aug",
-    Active: 3490,
-    Inactive: 4300,
+    income: 3490,
+    expense: 4300,
   },
   {
     name: "Sep",
-    Active: 3490,
-    Inactive: 4300,
+    income: 3490,
+    expense: 4300,
   },
   {
     name: "Oct",
-    Active: 3490,
-    Inactive: 4300,
+    income: 3490,
+    expense: 4300,
   },
   {
     name: "Nov",
-    Active: 3490,
-    Inactive: 4300,
+    income: 3490,
+    expense: 4300,
   },
   {
     name: "Dec",
-    Active: 3490,
-    Inactive: 4300,
+    income: 3490,
+    expense: 4300,
   },
 ];
 
-const VolunteerChart = () => {
+const FinanceChart = () => {
   return (
     <div className="bg-white rounded-xl w-full h-full p-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-lg font-semibold">Volunteer Engagement</h1>
+        <h1 className="text-lg font-semibold">Finance</h1>
         <Image src="/moreDark.png" alt="" width={20} height={20} />
       </div>
       <ResponsiveContainer width="100%" height="90%">
@@ -111,15 +111,15 @@ const VolunteerChart = () => {
           />
           <Line
             type="monotone"
-            dataKey="Active"
+            dataKey="income"
             stroke="#C3EBFA"
             strokeWidth={5}
           />
-          <Line type="monotone" dataKey="Inactive" stroke="#CFCEFF" strokeWidth={5}/>
+          <Line type="monotone" dataKey="expense" stroke="#CFCEFF" strokeWidth={5}/>
         </LineChart>
       </ResponsiveContainer>
     </div>
   );
 };
 
-export default VolunteerChart;
+export default FinanceChart;
