@@ -8,8 +8,8 @@ import "react-toastify/dist/ReactToastify.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "School Management Dashboard",
-  description: "School Management System",
+  title: "UFC Dashboard",
+  description: "SIGAA - Sistema Integrado de Gestão Acadêmica da UFC",
 };
 
 export default function RootLayout({
